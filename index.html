@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>The Elementalist</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL_1.0.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="head">
+      <div class="links">
+        <a class="site" href="creators.html">Creators</a>
+        <a class="site" href="other_sites.html">Other Sites</a>
+        <a class="site" href="etc.html">Etc.</a>
+      </div>
+    </div>
+    <h1>The Elementalist</h1>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px; margin-top: 100px;"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">The Elementalist</div>
+      </div>
+    </div>
+    <div class="button1"></div>
+  <div class="button2"></div>
+  <div class="gamepad1"></div>
+  <div class="gamepad2"></div>
+
+<footer>Created by the developing team from <i>BasementGames.</i></footer>
+  </body>
+</html>
